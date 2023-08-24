@@ -6,7 +6,7 @@
 /*   By: juwkim <juwkim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 18:34:32 by juwkim            #+#    #+#             */
-/*   Updated: 2023/08/24 18:50:13 by juwkim           ###   ########.fr       */
+/*   Updated: 2023/08/24 23:01:17 by juwkim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ class Point
 		float getX(void) const;
 		float getY(void) const;
 	private:
-		Fixed mX;
-		Fixed mY;
+		const Fixed mX;
+		const Fixed mY;
 };
 
 std::ostream& operator<<(std::ostream& out, const Point& point);

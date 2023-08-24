@@ -6,7 +6,7 @@
 /*   By: juwkim <juwkim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 17:07:49 by juwkim            #+#    #+#             */
-/*   Updated: 2023/08/24 19:19:37 by juwkim           ###   ########.fr       */
+/*   Updated: 2023/08/24 23:00:04 by juwkim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ Fixed::Fixed(const Fixed& fixed)
 
 Fixed::Fixed(const int raw)
 {
-	// std::cout << "Int constructor called" << '\n';
+	// std::cout << "const intructor called" << '\n';
 	mRaw = raw << mFractionalBits;
 }
 
@@ -54,7 +54,7 @@ int	Fixed::getRawBits(void) const
 	return mRaw;
 }
 
-void Fixed::setRawBits(int const raw)
+void Fixed::setRawBits(const int raw)
 {
 	mRaw = raw;
 }

@@ -6,7 +6,7 @@
 /*   By: juwkim <juwkim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/24 17:07:49 by juwkim            #+#    #+#             */
-/*   Updated: 2023/08/24 17:48:59 by juwkim           ###   ########.fr       */
+/*   Updated: 2023/08/24 22:59:28 by juwkim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	Fixed::getRawBits(void) const
 	return mRaw;
 }
 
-void Fixed::setRawBits(int const raw)
+void Fixed::setRawBits(const int raw)
 {
 	mRaw = raw;
 }
